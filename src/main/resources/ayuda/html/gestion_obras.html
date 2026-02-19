@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Ayuda - Gestión de Obras</title>
+</head>
+
+<body bgcolor="#ffffff" text="#000000">
+
+<!-- TÍTULO -->
+<h1 align="center">Gestión de Obras</h1>
+<hr>
+
+<!-- DESCRIPCIÓN GENERAL -->
+<p>
+    Esta ventana permite realizar el <strong>mantenimiento de las obras</strong> registradas en el sistema.
+    Desde aquí podrás <strong>insertar</strong>, <strong>modificar</strong> y <strong>eliminar</strong> obras,
+    así como consultar las existentes mediante la tabla inferior.
+</p>
+
+<hr>
+
+<!-- CAMPOS -->
+<h2>Campos del formulario</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+    <tr bgcolor="#e6e6e6">
+        <th align="left">Campo</th>
+        <th align="left">Descripción</th>
+    </tr>
+    <tr>
+        <td><strong>Código de Obra</strong></td>
+        <td>
+            Identificador único de la obra.
+            <br>
+            <em>No puede modificarse una vez creada la obra.</em>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Descripción</strong></td>
+        <td>
+            Breve descripción o localización de la obra.
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Fecha de Finalización</strong></td>
+        <td>
+            Fecha prevista de finalización de la obra.
+            <br>
+            El formato debe ser <strong>DD/MM/YYYY</strong>.
+            <br>
+            Este campo puede dejarse vacío si no se conoce la fecha.
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- BOTONES -->
+<h2>Botones disponibles</h2>
+
+<ul>
+    <li>
+        <strong>Insertar:</strong>
+        Registra una nueva obra con los datos introducidos en el formulario.
+    </li>
+    <li>
+        <strong>Modificar:</strong>
+        Actualiza los datos de una obra existente.
+        <br>
+        Para modificar una obra, haz <strong>doble clic</strong> sobre ella en la tabla.
+    </li>
+    <li>
+        <strong>Eliminar:</strong>
+        Borra la obra seleccionada.
+        <br>
+        <em>No se permitirá la eliminación si la obra tiene servicios asociados.</em>
+    </li>
+    <li>
+        <strong>Cancelar:</strong>
+        Limpia los campos del formulario y restablece el estado inicial.
+    </li>
+</ul>
+
+<hr>
+
+<!-- TABLA -->
+<h2>Tabla de Obras</h2>
+
+<p>
+    En la parte inferior de la ventana se muestra una tabla con todas las obras registradas.
+    <br>
+    Para editar o eliminar una obra, realiza <strong>doble clic</strong> sobre la fila correspondiente.
+</p>
+
+<hr>
+
+<!-- NOTAS -->
+<h2>Notas importantes</h2>
+
+<ul>
+    <li>Todos los campos obligatorios deben rellenarse antes de insertar o modificar.</li>
+    <li>Las fechas deben respetar el formato indicado.</li>
+    <li>Las operaciones de eliminación requieren confirmación.</li>
+</ul>
+
+<p align="center">
+    <em>Aplicación de Gestión de Obras</em>
+</p>
+
+</body>
+</html>

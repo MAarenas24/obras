@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Ayuda - Gestión de Trabajadores</title>
+</head>
+
+<body bgcolor="#ffffff" text="#000000">
+
+<!-- TÍTULO -->
+<h1 align="center">Gestión de Trabajadores</h1>
+<hr>
+
+<!-- DESCRIPCIÓN GENERAL -->
+<p>
+    Esta ventana permite realizar el <strong>mantenimiento de los trabajadores</strong> del sistema.
+    Desde aquí podrás <strong>insertar</strong>, <strong>modificar</strong> y <strong>eliminar</strong> trabajadores,
+    así como consultar los datos existentes mediante la tabla inferior.
+</p>
+
+<hr>
+
+<!-- CAMPOS -->
+<h2>Campos del formulario</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+    <tr bgcolor="#e6e6e6">
+        <th align="left">Campo</th>
+        <th align="left">Descripción</th>
+    </tr>
+    <tr>
+        <td><strong>Nombre del trabajador</strong></td>
+        <td>
+            Nombre completo del trabajador.
+            <br>
+            <em>Campo obligatorio.</em>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Documento</strong></td>
+        <td>
+            Documento identificativo del trabajador.
+            <br>
+            Puede ser <strong>NIF</strong>, <strong>NIE</strong>, <strong>CIF</strong> o <strong>Libre</strong>.
+            <br>
+            El sistema aplica automáticamente el formato según el tipo seleccionado.
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Tipo</strong></td>
+        <td>
+            Indica el tipo de trabajador:
+            <ul>
+                <li><strong>Administración</strong></li>
+                <li><strong>Servicios</strong></li>
+            </ul>
+            Es obligatorio seleccionar uno de los dos.
+        </td>
+    </tr>
+    <tr>
+        <td><strong>PVP Hora</strong></td>
+        <td>
+            Precio por hora del trabajador.
+            <br>
+            Se introduce mediante un control numérico.
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Población</strong></td>
+        <td>
+            Localidad de residencia del trabajador.
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- BOTONES -->
+<h2>Botones disponibles</h2>
+
+<ul>
+    <li>
+        <strong>Insertar:</strong>
+        Añade un nuevo trabajador con los datos introducidos.
+    </li>
+    <li>
+        <strong>Modificar:</strong>
+        Actualiza los datos del trabajador seleccionado.
+        <br>
+        Para modificar, realiza <strong>doble clic</strong> sobre un trabajador en la tabla.
+    </li>
+    <li>
+        <strong>Eliminar:</strong>
+        Elimina el trabajador seleccionado del sistema.
+        <br>
+        <em>No se permitirá la eliminación si el trabajador tiene servicios asociados.</em>
+    </li>
+    <li>
+        <strong>Cancelar:</strong>
+        Limpia los campos y restaura el formulario a su estado inicial.
+    </li>
+</ul>
+
+<hr>
+
+<!-- TABLA -->
+<h2>Tabla de Trabajadores</h2>
+
+<p>
+    En la parte inferior de la ventana se muestra una tabla con todos los trabajadores registrados.
+    <br>
+    Para editar o eliminar un trabajador, haz <strong>doble clic</strong> sobre la fila correspondiente.
+</p>
+
+<hr>
+
+<!-- NOTAS -->
+<h2>Notas importantes</h2>
+
+<ul>
+    <li>Todos los campos obligatorios deben estar correctamente rellenados.</li>
+    <li>El documento debe estar completo y respetar el formato indicado.</li>
+    <li>Las operaciones de eliminación requieren confirmación previa.</li>
+</ul>
+
+<p align="center">
+    <em>Aplicación de Gestión de Obras y Servicios</em>
+</p>
+
+</body>
+</html>

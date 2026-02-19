@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Ayuda - Registro de Servicios</title>
+</head>
+
+<body bgcolor="#ffffff" text="#000000">
+
+<!-- TÍTULO -->
+<h1 align="center">Registro de Servicios</h1>
+<hr>
+
+<!-- DESCRIPCIÓN GENERAL -->
+<p>
+    Esta ventana permite registrar y gestionar los <strong>servicios realizados por un trabajador</strong>
+    en una obra concreta, indicando la fecha y el horario trabajado.
+</p>
+
+<p>
+    Cada servicio queda asociado al <strong>trabajador actualmente identificado</strong> en el sistema.
+</p>
+
+<hr>
+
+<!-- CAMPOS -->
+<h2>Campos del formulario</h2>
+
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+    <tr bgcolor="#e6e6e6">
+        <th align="left">Campo</th>
+        <th align="left">Descripción</th>
+    </tr>
+
+    <tr>
+        <td><strong>Trabajador</strong></td>
+        <td>
+            Muestra el nombre del trabajador autenticado.
+            <br>
+            Este campo es informativo y no puede modificarse.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Obra</strong></td>
+        <td>
+            Obra en la que se ha realizado el servicio.
+            <br>
+            Se selecciona desde una lista desplegable.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Fecha</strong></td>
+        <td>
+            Fecha en la que se realizó el servicio.
+            <br>
+            El formato es <strong>YYYY/MM/DD</strong>.
+            <br>
+            El sistema aplica una máscara de entrada automática.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Hora de inicio</strong></td>
+        <td>
+            Hora y minuto de inicio del servicio.
+            <br>
+            Se introduce mediante controles numéricos.
+        </td>
+    </tr>
+
+    <tr>
+        <td><strong>Hora de fin</strong></td>
+        <td>
+            Hora y minuto de finalización del servicio.
+            <br>
+            Debe ser posterior a la hora de inicio.
+        </td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- BOTONES -->
+<h2>Botones disponibles</h2>
+
+<ul>
+    <li>
+        <strong>Insertar:</strong>
+        Registra un nuevo servicio con los datos introducidos.
+    </li>
+    <li>
+        <strong>Modificar:</strong>
+        Permite modificar la <strong>hora de fin</strong> de un servicio existente.
+        <br>
+        Para modificar un servicio, realiza <strong>doble clic</strong> sobre él en la tabla.
+    </li>
+    <li>
+        <strong>Eliminar:</strong>
+        Elimina el servicio seleccionado previa confirmación.
+    </li>
+    <li>
+        <strong>Cancelar:</strong>
+        Limpia el formulario y restablece el estado inicial.
+    </li>
+</ul>
+
+<hr>
+
+<!-- TABLA -->
+<h2>Tabla de Servicios</h2>
+
+<p>
+    En la parte inferior se muestra una tabla con todos los servicios registrados
+    por el trabajador actual.
+</p>
+
+<ul>
+    <li>Obra</li>
+    <li>Fecha del servicio</li>
+    <li>Hora de inicio</li>
+    <li>Hora de fin</li>
+</ul>
+
+<p>
+    Para editar o eliminar un servicio, haz <strong>doble clic</strong> sobre la fila correspondiente.
+</p>
+
+<hr>
+
+<!-- VALIDACIONES -->
+<h2>Validaciones y restricciones</h2>
+
+<ul>
+    <li>La fecha debe estar completa y respetar el formato indicado.</li>
+    <li>La hora de fin debe ser posterior a la hora de inicio.</li>
+    <li>
+        No se permite registrar servicios que se <strong>solapen en horario</strong>
+        con otros servicios del mismo trabajador en la misma fecha.
+    </li>
+    <li>
+        Al modificar un servicio, no es posible cambiar la obra, la fecha ni la hora de inicio.
+    </li>
+</ul>
+
+<hr>
+
+<p align="center">
+    <em>Aplicación de Gestión de Obras y Servicios</em>
+</p>
+
+</body>
+</html>
